@@ -23,7 +23,7 @@ var HashTable = function(size) {
           this.collection[hashKey]=bucket;
      }
 
-     if(bucket[key])
+     if(!bucket[key])
        this.count++;
       
     bucket[key]=value;
